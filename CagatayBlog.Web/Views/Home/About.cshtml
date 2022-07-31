@@ -1,0 +1,7 @@
+﻿
+<h1>About</h1>
+@{
+    
+    @foreach (var news  in (List<NewsViewModel>)ViewBag.News)    {        <h2>@news.Title</h2>        <p>@news.Content</p>    }
+
+}
